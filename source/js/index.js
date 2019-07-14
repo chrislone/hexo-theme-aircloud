@@ -14,7 +14,7 @@ window.onresize = () => {
         // aboutContent.classList.remove('show-block');
     }
     if(window.isPost){
-        reLayout()
+        // reLayout()
     }
 }
 
