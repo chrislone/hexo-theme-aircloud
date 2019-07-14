@@ -10,8 +10,8 @@ window.onresize = () => {
     // often for debug
     if(window.document.documentElement.clientWidth > 680){
         let aboutContent = document.getElementById('nav-content')
-        aboutContent.classList.remove('hide-block')
-        aboutContent.classList.remove('show-block');
+        // aboutContent.classList.remove('hide-block')
+        // aboutContent.classList.remove('show-block');
     }
     if(window.isPost){
         reLayout()
@@ -21,15 +21,15 @@ window.onresize = () => {
 // Nav switch function on mobile
 /*****************************************************************************/
 const navToggle = document.getElementById('site-nav-toggle');
-navToggle.addEventListener('click', () => {
+navToggle && navToggle.addEventListener('click', () => {
     let aboutContent = document.getElementById('nav-content')
-    if (!aboutContent.classList.contains('show-block')) {
-        aboutContent.classList.add('show-block');
-        aboutContent.classList.remove('hide-block')
-    } else {
-        aboutContent.classList.add('hide-block')
-        aboutContent.classList.remove('show-block');
-    }
+    // if (!aboutContent.classList.contains('show-block')) {
+    //     aboutContent.classList.add('show-block');
+    //     aboutContent.classList.remove('hide-block')
+    // } else {
+    //     aboutContent.classList.add('hide-block')
+    //     aboutContent.classList.remove('show-block');
+    // }
 })
 
 
@@ -43,7 +43,7 @@ const searchResultContainer = document.getElementById('search-result-container')
 const escSearch = document.getElementById('esc-search')
 const beginSearch = document.getElementById('begin-search')
 
-searchField.addEventListener('mousewheel',(e) => {
+searchField && searchField.addEventListener('mousewheel',(e) => {
     // e.preventDefault()
     e.stopPropagation()
     return false
@@ -52,15 +52,15 @@ searchField.addEventListener('mousewheel',(e) => {
 var searchJson;
 var caseSensitive = false
 
-searchButton.addEventListener('click', () => {
+searchButton && searchButton.addEventListener('click', () => {
     search()
 });
 
-escSearch.addEventListener('click',() => {
+escSearch && escSearch.addEventListener('click',() => {
     hideSearchField()
 })
 
-beginSearch.addEventListener('click',() => {
+beginSearch && beginSearch.addEventListener('click',() => {
     let keyword = searchInput.value;
     if(keyword){
         searchFromKeyWord(keyword)

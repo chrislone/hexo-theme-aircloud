@@ -3,13 +3,13 @@
 <%- partial('_partial/head') %>
 <body>
 
-<div class="site-nav-toggle" id="site-nav-toggle">
-    <button>
-        <span class="btn-bar"></span>
-        <span class="btn-bar"></span>
-        <span class="btn-bar"></span>
-    </button>
-</div>
+<!--<div class="site-nav-toggle" id="site-nav-toggle">-->
+<!--    <button>-->
+<!--        <span class="btn-bar"></span>-->
+<!--        <span class="btn-bar"></span>-->
+<!--        <span class="btn-bar"></span>-->
+<!--    </button>-->
+<!--</div>-->
 
 <div class="index-about">
     <i> <%= config.subtitle %> </i>
@@ -17,12 +17,12 @@
 
 <div class="index-container">
     <% if(!is_current('/404')){%>
-    <div class="index-left">
+    <!-- <div class="index-left">
         <%- partial('_partial/nav', null, {cache: false}) %>
         <div class="index-about-mobile">
             <i> <%= config.subtitle %> </i>
         </div>
-    </div>
+    </div> -->
     <% } %>
     <div class="index-middle">
         <!-- Main Content -->

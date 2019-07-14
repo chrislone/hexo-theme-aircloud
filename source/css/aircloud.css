@@ -767,6 +767,7 @@ body {
   .index-container .index-middle {
     max-width: 100%;
     flex: 1;
+    padding-top: 40px;
   }
   .index-about {
     display: none;
