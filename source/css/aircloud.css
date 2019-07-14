@@ -322,6 +322,9 @@ body {
     z-index: 2;
     background-color: white;
   }
+  .site-nav-sticky{
+    height: 40px;
+  }
 }
 .post-preview {
   width: 100%;
@@ -767,7 +770,6 @@ body {
   .index-container .index-middle {
     max-width: 100%;
     flex: 1;
-    padding-top: 40px;
   }
   .index-about {
     display: none;

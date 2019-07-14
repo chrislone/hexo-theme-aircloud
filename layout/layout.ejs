@@ -10,6 +10,7 @@
 <!--        <span class="btn-bar"></span>-->
 <!--    </button>-->
 <!--</div>-->
+<div class="site-nav-sticky"></div>
 
 <div class="index-about">
     <i> <%= config.subtitle %> </i>
@@ -41,21 +42,21 @@
     window.isPost = <%- is_post() %>
 </script>
 <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
-<%- js('js/index.js') %>
-<!-- <script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script> -->
-<%if( (is_post() || is_current('about')) && config.comment){%>
-<%- js('js/gitment.js') %>
-<script type="text/javascript">
-    var gitment = new Gitment({
-        id: '<%- page.title %>',
-        owner: '<%- config.comment.owner %>',
-        repo: '<%- config.comment.repo %>',
-        oauth: {
-            client_id: '<%- config.comment.id %>',
-            client_secret: '<%- config.comment.secret %>',
-        },
-    })
-    gitment.render('comment-container')
-</script>
-<%}%>
+<!--<%- js('js/index.js') %>-->
+<!--&lt;!&ndash; <script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script> &ndash;&gt;-->
+<!--<%if( (is_post() || is_current('about')) && config.comment){%>-->
+<!--<%- js('js/gitment.js') %>-->
+<!--<script type="text/javascript">-->
+<!--    var gitment = new Gitment({-->
+<!--        id: '<%- page.title %>',-->
+<!--        owner: '<%- config.comment.owner %>',-->
+<!--        repo: '<%- config.comment.repo %>',-->
+<!--        oauth: {-->
+<!--            client_id: '<%- config.comment.id %>',-->
+<!--            client_secret: '<%- config.comment.secret %>',-->
+<!--        },-->
+<!--    })-->
+<!--    gitment.render('comment-container')-->
+<!--</script>-->
+<!--<%}%>-->
 </html>
