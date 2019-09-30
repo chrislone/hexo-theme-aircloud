@@ -77,6 +77,7 @@
   color: #404040;
   margin-bottom: 5px;
   margin-top: 5px;
+  word-break: break-word;
 }
 .post-content ul li:before,
 .post-content ol li:before {
