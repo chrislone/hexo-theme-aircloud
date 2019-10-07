@@ -27,7 +27,7 @@
   transition: color 0.4s;
 }
 .archives-container .one-tag-list ul li a span:hover {
-  color: #4990E2;
+  color: #4990e2;
 }
 @media screen and (max-width: 680px) {
   .archives-container .one-tag-list .listing-seperator {

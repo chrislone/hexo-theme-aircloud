@@ -4,7 +4,8 @@
   "description": "> [English Document](./readme-en.md) | [预览地址](http://xmodules.xyz/)",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:css": "gulp less && gulp css"
   },
   "repository": {
     "type": "git",
@@ -17,8 +18,10 @@
     "url": "https://github.com/chrislone/hexo-theme-aircloud/issues"
   },
   "homepage": "https://github.com/chrislone/hexo-theme-aircloud#readme",
-  "dependencies": {
+  "devDependencies": {
     "gulp": "^4.0.2",
+    "gulp-clean-css": "^4.2.0",
+    "gulp-concat-css": "^3.1.0",
     "gulp-less": "^4.0.1"
   }
 }

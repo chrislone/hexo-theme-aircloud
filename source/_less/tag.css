@@ -40,7 +40,7 @@
   transition: color 0.4s;
 }
 .one-tag-list .post-preview a .post-title:hover {
-  color: #4990E2;
+  color: #4990e2;
 }
 @media screen and (max-width: 680px) {
   .one-tag-list {
@@ -70,6 +70,6 @@
     transition: color 0.4s;
   }
   .one-tag-list .post-preview a .post-title:hover {
-    color: #4990E2;
+    color: #4990e2;
   }
 }

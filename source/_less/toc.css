@@ -26,16 +26,16 @@
   word-break: break-all;
 }
 .toc-article li.active {
-  border-left: 2px solid #4990E2;
+  border-left: 2px solid #4990e2;
 }
 .toc-article li.active > a {
-  color: #4990E2;
+  color: #4990e2;
 }
 .toc-article li:hover {
-  border-left: 2px solid #4990E2;
+  border-left: 2px solid #4990e2;
 }
 .toc-article li:hover > a {
-  color: #4990E2;
+  color: #4990e2;
 }
 .toc-article > ol > li {
   border-left: none !important;

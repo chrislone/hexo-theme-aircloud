@@ -87,6 +87,10 @@
 .site-nav-toggle button .btn-bar + .btn-bar {
   margin-top: 4px;
 }
+.site-nav-sticky {
+  display: block;
+  height: 44px;
+}
 .search-field {
   overflow: hidden;
   display: none;
@@ -231,5 +235,9 @@
     padding-left: 20px;
     z-index: 2;
     background-color: white;
+  }
+  .site-nav-sticky {
+    display: block;
+    height: 44px;
   }
 }
