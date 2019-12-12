@@ -1,6 +1,6 @@
 {
   "name": "hexo-theme-aircloud",
-  "version": "1.0.0",
+  "version": "1.1.1",
   "description": "> [English Document](./readme-en.md) | [预览地址](http://xmodules.xyz/)",
   "main": "index.js",
   "scripts": {
