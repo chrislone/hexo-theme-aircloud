@@ -1,8 +1,7 @@
 const gulpLess = require('gulp-less')
 const path = require('path')
 const { src, dest, task } = require('gulp')
-const concatCss = require('gulp-concat-css')
-const cleanCSS = require('gulp-clean-css')
+const rename = require('gulp-rename')
 
 const cssConcatSequence = [
   'source/_less/common.css',
@@ -24,23 +23,18 @@ const cssConcatSequence = [
   'source/_less/_partial/donate.css'
 ]
 
-task('css', function() {
-  return (
-    src(cssConcatSequence, {
-      allowEmpty: true
-    })
-      .pipe(concatCss('./source/css/aircloud.css'))
-      // .pipe(cleanCSS())
-      .pipe(dest('.'))
-  )
-})
-
-task('less', function() {
-  return src('./source/_less/**/*.less')
+task('less', function(){
+  return src('./source/_less/main.less')
     .pipe(
       gulpLess({
-        paths: [path.join(__dirname, 'source/_less')]
+        paths: [path.join(__dirname, 'source/_less/main.less')]
       })
     )
-    .pipe(dest('./source/_less/'))
+    .pipe(rename(function (path) {
+      // Updates the object in-place
+      // path.dirname += "/ciao";
+      path.basename = "aircloud";
+      path.extname = ".css";
+    }))
+    .pipe(dest('./source/css/'))
 })
